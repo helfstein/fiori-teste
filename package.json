@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/helfstein/fiori-teste/issues"
   },
-  "homepage": "https://github.com/helfstein/fiori-teste#readme"
+  "homepage": "https://github.com/helfstein/fiori-teste#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "engines": {
+    "node": "10.x"
+  }
 }
