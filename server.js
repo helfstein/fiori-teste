@@ -1,11 +1,9 @@
 var express = require('express');
-
-var express = require('express');
-
 var server = express(); 
 server.configure(function(){
   //server.use('/media', express.static(__dirname + '/media'));
-  server.use(express.static(__dirname + '/public'));
+  server.use(express.static(__dirname + '/src'));
 });
 
-server.listen(3000);
+server.listen(process.env.PORT || 5000);
+
