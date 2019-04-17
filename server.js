@@ -1,9 +1,10 @@
 var express = require('express');
-var server = express(); 
-server.configure(function(){
-  //server.use('/media', express.static(__dirname + '/media'));
-  server.use(express.static(__dirname + '/src'));
-});
+var path = require('path');
+var serveStatic = require('serve-static');
 
-server.listen(process.env.PORT || 5000);
+var app = express();
+
+
+app.use(serveStatic(path.join(__dirname, 'src')));
+app.listen(process.env.PORT || 5000);
 
