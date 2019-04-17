@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "web": "node server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/helfstein/fiori-teste#readme",
   "dependencies": {
-    "node-static": "^0.7.11"
+    "express": "^4.16.4"
   },
   "engines": {
     "node": "10.x"
